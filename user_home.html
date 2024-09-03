@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-hero {
+            background-image: url('images/bus.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Bus Booking</a>
+            <div>
+                <a href="#" class="text-white px-4 py-2">Home</a>
+                <a href="#features" class="text-white px-4 py-2">Features</a>
+                <a href="#contact" class="text-white px-4 py-2">Contact</a>
+                <a href="login.html" class="text-white px-4 py-2 border border-white rounded">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-hero text-white h-screen flex flex-col items-center justify-center bg-opacity-75">
+        <div class="text-center px-6">
+            <h1 class="text-5xl font-bold mb-4">Find Your Perfect Bus Journey</h1>
+            <p class="text-lg mb-8">Explore various routes and book your tickets with ease.</p>
+            <form action="#" method="POST" class="w-full max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex flex-col md:flex-row md:space-x-4 mb-4">
+                    <input type="text" placeholder="From" class="border rounded w-full py-2 px-3 text-gray-700 mb-2 md:mb-0">
+                    <input type="text" placeholder="To" class="border rounded w-full py-2 px-3 text-gray-700">
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-4 mb-4">
+                    <input type="date" placeholder="Date" class="border rounded w-full py-2 px-3 text-gray-700 mb-2 md:mb-0">
+                    <input type="number" placeholder="Passengers" class="border rounded w-full py-2 px-3 text-gray-700">
+                </div>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Why Choose Us?</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">Convenient Booking</h3>
+                        <p class="text-gray-700">Book your tickets easily with just a few clicks, anytime and anywhere.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">Real-Time Tracking</h3>
+                        <p class="text-gray-700">Track your bus in real-time and get updates on your journey.</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">24/7 Customer Support</h3>
+                        <p class="text-gray-700">Our support team is available around the clock to assist you with any issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <p class="text-lg mb-4">Have any questions or need assistance? Feel free to reach out to us.</p>
+            <p class="text-lg">Email: support@busbooking.com</p>
+            <p class="text-lg">Phone: +123 456 7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 p-4 text-center text-white">
+        <p>&copy; 2024 Bus Booking System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

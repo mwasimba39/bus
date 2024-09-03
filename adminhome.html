@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Bus Booking</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('images/bus.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .bg-sidebar {
+            background-color: rgba(26, 32, 44, 0.9);
+        }
+    </style>
+</head>
+<body class="flex h-screen overflow-hidden mt-3">
+
+    <!-- Sidebar -->
+    <aside class="bg-sidebar text-white w-64 p-4">
+        <h1 class="text-2xl font-bold mb-6">Admin Dashboard</h1>
+        <ul>
+            <li><a href="#" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 rounded">Bus available</a></li>
+            <li><a href="#" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 rounded">Buses Upload</a></li>
+            <li><a href="#" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 rounded">Bus schedules</a></li>
+            <!-- <li><a href="#" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 rounded">Users</a></li> -->
+            <li><a href="#" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 rounded">Payment</a></li>
+            <li><a href="#" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 rounded">View Passenger's Booking</a></li>
+            <li><a href="login.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-700 rounded">Logout</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col overflow-hidden">
+        <!-- Header -->
+        <header class="bg-white shadow-md flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="images/buslogo.png" alt="Logo" class="h-8 mr-4"> <!-- Replace with your logo path -->
+                <h2 class="text-3xl font-bold text-gray-800">Admin Dashboard</h2>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Notifications</button>
+                </div>
+                <div class="relative">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Messages</button>
+                </div>
+                <div class="relative">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Profile</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Area -->
+        <div class="flex-1 p-6">
+            <!-- Statistics Cards -->
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Total Bookings</h3>
+                    <p class="text-2xl">1,234</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Total Buses</h3>
+                    <p class="text-2xl">56</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">Total Users</h3>
+                    <p class="text-2xl">789</p>
+                </div>
+            </section>
+
+            <!-- Recent Activity -->
+            <section>
+                <h3 class="text-2xl font-bold mb-4 text-white">Recent Activity</h3>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <ul>
+                        <li class="mb-2">
+                            <span class="font-semibold">John Doe</span> booked a ticket from <span class="font-semibold">Mbeya</span> to <span class="font-semibold">Dodoma</span>.
+                        </li>
+                        <li class="mb-2">
+                            <span class="font-semibold">Jane Smith</span> added a new bus with route <span class="font-semibold">Dr es salaam to Mwanza</span>.
+                        </li>
+                        <li>
+                            <span class="font-semibold">Alex Johnson</span> requested support for a booking issue.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
